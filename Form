@@ -1,0 +1,15 @@
+<form>
+  <label for="fname">Components of a PC</label><br>
+  <input type="Tower/Case">
+  <input type="CPU">
+  <input type="GPU">
+  <input type="RAM">
+  <input type="Cooling">
+  <input type="Accesories">
+  <input type="Motherboard">
+  <input type="Operating System">
+  <input type="Antivirus">
+  <input type="RGB LIGHTS (Vital)">
+ 
+ 
+</form>
