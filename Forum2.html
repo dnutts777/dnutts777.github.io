@@ -1,64 +1,83 @@
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="style.css"> 
- <title>SALE!</title>
-</head>  
- <p>EVERYTHING MUST GO ALL ITEMS ARE 4$! 30% all orders over 30!</p>
- 
+<script
+	function calcTotalUnits(b,a,p,c,u,l,o,lk,on,r)
+	 {
+	 return b + a + p + c + u + l + o + lk + on + r;
+	
+	 }
+	function calcDis(T)
+	 {
+	  if (T > 20)
+	  {
+		return T - (T * .1)
+	  }
+	  else {
+	  return 0; 
+	       }
+
+	 }
+	 function calTotal(p, un){
+		return un * p;
+	 }
+	function Runanalysis()
+	{
+		let p;
+		p = 4;
+
+		b = parseInt(document.getElementById("Bananas".value);
+		a = parseInt(document.getElementById("Apples".value;
+		p = parseInt(document.getElementById("Pears".value;
+		c = parseInt(document.getElementById("Carrots".value;
+		u  parseInt(document.getElementById("Cucumbers".value;
+		l = parseInt(document.getElementById("Lettuce".value;
+		o = parseInt(document.getElementById("Oranges".value;
+		lk = parseInt(document.getElementById("Leeks".value;
+		on = parseInt(document.getElementById("Onions".value;
+		r = parseInt(document.getElementById("Radish".value;
+
+		
+		
+		
+		
+		un = calcTotalUnits(b,a,p,c,u,l,o,lk,on,r);
+		T = calcTotal(p, un);
+		D = calcDis(T);
+		
+	}
+	
+</script>
+</head>
+<body>
+
+	Number of Bananas(b): <input type="text" id="b"/><br/>
+	<input type="type" id ="Bananas"/><br/>
+	Number of Apples(a):
+	<input type="type" id ="Apples"/><br/>
+	Number of Pears(p):
+	<input type="type" id ="Pears"/><br/>
+	Number of Carrots(c):
+	<input type="type" id ="Carrots"/><br/>
+	Number of Cucumbers(u):
+	<input type="type" id ="Cucumbers"/><br/>
+	Number of Lettuce(l):
+	<input type="type" id ="Lettuce"/><br/>
+	Number of Oranges(o):
+	<input type="type" id ="Oranges"/><br/>
+	Number of Leeks(lk):
+	<input type="type" id ="Leeks"/><br/>
+	Number of Onions(on):
+	<input type="type" id ="Onions"/><br/>
+	Number of Radish(r):
+	<input type="type" id ="Radish"/><br/>
+	
+	<input type="button" value="Process" onclick="Runanalysis();"/>
+	</br>
+	Total(T): <input type="text" id="total"/><br/>
+	Discount (D) <input type="type" id ="discount"/><br/>
 
 
-  <body>
-   
-  <table id="tableID" width="500">
-    <tr>
-        <th>Apple</th>
-        <th>Banna</th>
-        <th>Potatoe</th>
-        <th>Muffin</th>
-        <th>Soda</th>
-        <th>Fries</th>
-        <th>Chips</th>
-        <th>Total</th>
-    </tr>
-    <tr>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="row-total" width="40"></td>
-</tr>
-<tr>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=4></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="row-total" width="40"></td>
-</tr>
-<tr>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=8></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="input" width="40"><input type="text" size="8" class="row-input" value=0></td>
-        <td class="row-total" width="40"></td>
-</tr>
-</table>
-  
-  <input type="button" value="Calculate" onclick="updateTotal()">
-  
-  
-  </body>  
-  
-  
-  
-  
+
+
+</body>
 </html>
