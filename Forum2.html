@@ -1,5 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<title>Computers!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
 <script>
 	
 	function calcTotalUnits(b, a, c, u, l, o, lk, on, r, p)
@@ -50,8 +119,27 @@
 	
 </script>
 </head>
+
 <body>
 
+<h2>Sale, sale sale!</h2>
+<header>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="textandterms.html">Text/Terms</a></li>
+      <li><a href="imagepage.html">Images</a></li>
+      <li><a href="multimedia.html">How-To</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">UserDesign</a></li>
+      
+    </ul>
+  </nav>
+</section>
+<body>
 	Number of Bananas(b): <input type="text" id="b"/><br/>
 	<input type="type" id ="Bananas"/><br/>
 	Number of Apples(a):
@@ -77,9 +165,11 @@
 	</br>
 	Total(T): <input type="text" id="total"/><br/>
 	Discount (D) <input type="type" id ="discount"/><br/>
-
-
-
-
+	
+	
+	
+<footer>
+  <p>SALE!r</p>
+</footer>
 </body>
 </html>
