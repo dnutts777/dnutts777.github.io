@@ -1,6 +1,131 @@
 <html>
-  <p>This page will have text and terms of the hobbie i defined</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Computers!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Terms of Computers</h2>
+<header>
+  <h2>Terms</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="imagepage.html">Images</a></li>
+      <li><a href="multimedia.html">How-To</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">UserDesign</a></li>
+      <li><a href="Forum2.html">Sale!</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+   <h1>Components of a computer</h1>
+
+<p>The following is a list of major components of a computer and what they do:</p>
+
+<dl>
+  <dt>Case</dt>
+  <dd>Holds all the components</dd>
+  <dt>Motherboard</dt>
+  <dd>Everything is plugged into this component, the "main hub"</dd>
+  <dt>RAM</dt>
+  <dd>Holds all the components</dd>
+  <dt>RAM</dt>
+  <dd>Random Access Memory(RAM) enables your computer to do short term tasks, like browser tabs. </dd>
+  <dt>CPU</dt>
+  <dd>The brain of the computer, this is where the magic happens.</dd>
+  <dt>GPU</dt>
+  <dd>Your graphics card is what makes things look pretty!</dd>
+  <dt>SSD</dt>
+  <dd>Holds data, faster than a traditonal harddrive.</dd>
+  <dt>HDD</dt>
+  <dd>Holds data, usually bigger in capcity than SSDs, tho slower</dd>
+  <dt>Cooling</dt>
+  <dd>Fans, radiators, watercooling are all systems that help keep your system running cool!</dd>
+  
+</dl>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Computers!</p>
+</footer>
+
+</body>
+</html>  
 
 
 </html>
