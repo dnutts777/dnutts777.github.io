@@ -61,6 +61,51 @@ footer {
   color: white;
 }
 
+	.form-container{
+	  dispaly: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  width: 50%;
+	  margin: 0 auto;
+	}
+	.form-row {
+	  dispaly: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  margin-bottom: 10px;
+	}
+	.form-label{
+	  width: 150px;
+	  font-weight: bold;
+	}
+	
+	.form-input{
+	  width: 200px;
+	  height: 30px;
+	  padding: 5px;
+	  border: 1px solid #ccc;
+	  border-radius: 3px;
+	}
+	
+	.form-button{
+	  width: 100px;
+	  height: 40px;
+	  background-color: #333;
+	  color: #fff;
+	  font-weight: bold;
+	  border: none;
+	  border-radius: 3px;
+	  cursor: pointer;
+	}
+	
+	.form-total{
+	  font-size: 18px;
+	  font-weight: bold;
+	  color: #333;
+	  margin-top: 20px;
+	}
+}
+	
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
   section {
@@ -69,59 +114,44 @@ footer {
   }
 }
 </style>
-<script src="javascript.js">
-	
-</script>
 </head>
-
+	
 <body>
-
-<h2>Sale, sale sale!</h2>
-<header>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="textandterms.html">Text/Terms</a></li>
-      <li><a href="imagepage.html">Images</a></li>
-      <li><a href="multimedia.html">How-To</a></li>
-      <li><a href="#">Links</a></li>
-      
-      
-    </ul>
-  </nav>
-</section>
-<body>
-	Number of Bananas(b): 
-	<input type="type" id ="Bananas"/><br/>
-	Number of Apples(a):
-	<input type="type" id ="Apples"/><br/>
-	Number of Pears(p):
-	<input type="type" id ="Pears"/><br/>
-	Number of Carrots(c):
-	<input type="type" id ="Carrots"/><br/>
-	Number of Cucumbers(u):
-	<input type="type" id ="Cucumbers"/><br/>
-	Number of Lettuce(l):
-	<input type="type" id ="Lettuce"/><br/>
-	Number of Oranges(o):
-	<input type="type" id ="Oranges"/><br/>
-	Number of Leeks(lk):
-	<input type="type" id ="Leeks"/><br/>
-	Number of Onions(on):
-	<input type="type" id ="Onions"/><br/>
-	Number of Radish(r):
-	<input type="type" id ="Radish"/><br/>
-	
-	<input type="button" value="Process" onclick="Runanalysis();"/>
-	</br>
-	Total(T): <input type="text" id="total"/><br/>
-	Discount (D) <input type="type" id ="discount"/><br/>
-	
-	
-	
+  <div class="form-container">
+  <form>
+  <div class="form-row">
+  <label class="form-label" for="product-name">Product Name:</label>
+  <input class="form input" type="text" id="product-name"/>
+  </div>
+  <div class="form-row">
+  <label class="form-label" for="product-price>Product Price:</label>
+  <input class="form input" type="number" id="product-price" value="5" />
+  </div>
+  <div class="form-row">
+  <label class="form-label" for="product-quantity>Quantity:</label>
+  <input class="form input" type="number" id="product-quantity" value="1" />
+  </div>
+  <div class="form-row">
+  <label class="form-label" for="discount-threshold></label>
+  <input class="form input" type="number" id="product-quantity" value="10" />
+  </div>
+  <div class="form-row">
+		       <label class="form-label" for="discount-amount"> Discount Amount: </label>
+  <div class="form-row"> 
+		      <input class="form-input" type="number" id="discount-amount" value="5" />
+											    </div>
+<div class="for-row">
+		    <button class="form-button" onclick="calculateTotal()>Calculate Total</button>
+	  </div>
+	  </form>
+	  <div class="form-total>Total: $<span id ="total">0</span>
+							  </div>	
+							  </div>
+							  
+<script>
+function calculateTotal()
+</script>
+							  
 <footer>
   <p>SALE!r</p>
 </footer>
